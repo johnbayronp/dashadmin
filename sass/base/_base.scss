@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+
+    @include respond(tab-land) {
+        font-size: 56,25%; // 1rem = 9px, 9/16 = 56,25%
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px, 8/16 = 50%
+    }
+
+    @include respond(big-desk) {
+        font-size: 75%; // 1rem = 12px, 12/16 = 75%
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: $gray;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, ul, li {
+    font-size: 1.6rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input[type="submit"] {
+    &:focus,
+    &:active {
+        outline: none;
+        border: none;
+    }
+}

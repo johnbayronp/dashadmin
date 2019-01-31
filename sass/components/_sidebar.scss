@@ -1,0 +1,78 @@
+.sidebar {
+    max-width: 24rem;
+    width: 24rem;
+    background-color: $purpleLight;
+    margin: 0;
+    // padding-left: 2.5rem;
+
+    &__form {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4rem;
+
+    }
+
+    &__projects {
+        -webkit-appearance: none;
+        appearance: none;
+        background: rgba(white, .1);
+        padding: .9rem 1.8rem;
+        color: white;
+        border-radius: 5rem;
+        border: none;
+        outline: none;
+        font-size: 1.3rem;
+        font-weight: 500;
+
+    }
+
+    &--title-nav {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding-left: 2.8rem;
+    }
+
+    &__nav { 
+        padding-top: 4rem;
+
+        ul {
+            padding: 2.5rem 0 3rem 0;
+
+            li {
+                padding: .9rem 2.5rem;
+                margin: .5rem 0 0 2.5rem;
+                transition: all .4s ease-in-out;
+                
+                a {
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    color: white;
+
+                    i {
+                        display: inline-block;
+                        width: 1.5rem;
+                        margin-right: 2.5rem;
+                    }
+                }
+
+                &.active, &:hover, &:focus {
+                    background-color: $purpleDark;
+                    border-top-left-radius: 5rem;
+                    border-bottom-left-radius: 5rem;
+                    padding-right: 0;
+
+                    a {
+                        i {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}

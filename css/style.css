@@ -1,0 +1,113 @@
+/*
+0 - 600px:          Phone
+600 - 900px:        Tablet portrait
+900 - 1200px:       Tablet landscape
+[1200 - 1800px]:    Normal style or main css applied.
+1800px+:            Big desktop
+
+Arguments of breakpoints
+- phone
+- tab-port
+- tab-land
+- big-desk
+
+1em = 16px
+
+order: Base + typography > general layout + grid > page layout > components
+*/
+/* Colors */
+/* Grid System */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56,25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  color: #FCFCFF;
+  font-weight: 700; }
+
+a {
+  text-decoration: none; }
+
+a, p, ul, li {
+  font-size: 1.6rem; }
+
+ul, li {
+  list-style: none; }
+
+input[type="submit"]:focus, input[type="submit"]:active {
+  outline: none;
+  border: none; }
+
+.sidebar {
+  max-width: 24rem;
+  width: 24rem;
+  background-color: #3A305B;
+  margin: 0; }
+  .sidebar__form {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem; }
+  .sidebar__projects {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: .9rem 1.8rem;
+    color: white;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 500; }
+  .sidebar--title-nav {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 2.8rem; }
+  .sidebar__nav {
+    padding-top: 4rem; }
+    .sidebar__nav ul {
+      padding: 2.5rem 0 3rem 0; }
+      .sidebar__nav ul li {
+        padding: .9rem 2.5rem;
+        margin: .5rem 0 0 2.5rem;
+        transition: all .4s ease-in-out; }
+        .sidebar__nav ul li a {
+          padding: 0;
+          margin: 0;
+          display: block;
+          color: white; }
+          .sidebar__nav ul li a i {
+            display: inline-block;
+            width: 1.5rem;
+            margin-right: 2.5rem; }
+        .sidebar__nav ul li.active, .sidebar__nav ul li:hover, .sidebar__nav ul li:focus {
+          background-color: #312847;
+          border-top-left-radius: 5rem;
+          border-bottom-left-radius: 5rem;
+          padding-right: 0; }
+          .sidebar__nav ul li.active a i, .sidebar__nav ul li:hover a i, .sidebar__nav ul li:focus a i {
+            color: #2D8AD4; }

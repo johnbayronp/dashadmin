@@ -1,0 +1,14 @@
+{
+  "name": "dash",
+  "version": "1.0.0",
+  "description": "Admin dashboard Enterprise Solutions",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Daniel Navarro",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
