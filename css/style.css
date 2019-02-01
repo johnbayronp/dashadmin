@@ -141,11 +141,15 @@ input[type="submit"]:focus, input[type="submit"]:active {
 
 .wrapper {
   margin-left: 24rem;
-  padding: 0; }
+  padding: 0 4.5rem;
+  /* HEADER SECTION */
+  /* CONTENT */ }
   .wrapper__header {
-    padding: 1rem 3rem;
+    padding: 1rem 0;
     width: 100%;
-    text-align: right; }
+    text-align: right;
+    /* SEARCH FORM - INPUT */
+    /* USER AREA - NOTIFICATIONS AND SETTINGS */ }
     .wrapper__header .search-area .searchform {
       padding-right: 4rem; }
       .wrapper__header .search-area .searchform__btn {
@@ -201,3 +205,5 @@ input[type="submit"]:focus, input[type="submit"]:active {
       .wrapper__header .user-img img {
         width: 100%;
         min-height: 100%; }
+  .wrapper__content {
+    padding: 1rem 0; }

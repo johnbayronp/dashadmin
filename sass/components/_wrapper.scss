@@ -1,12 +1,14 @@
 .wrapper {
     margin-left: 24rem;
-    padding: 0;
+    padding: 0 4.5rem;;
 
+    /* HEADER SECTION */
     &__header {
-        padding: 1rem 3rem;
+        padding: 1rem 0;
         width: 100%;
         text-align: right;      
 
+        /* SEARCH FORM - INPUT */
         .search-area {
             .searchform {
                 padding-right: 4rem;
@@ -56,6 +58,7 @@
             }
         }
 
+        /* USER AREA - NOTIFICATIONS AND SETTINGS */
         .notifications {
             position: relative;
 
@@ -92,5 +95,12 @@
                 min-height: 100%;
             }
         }
+    }
+
+    /* CONTENT */
+    &__content {
+        padding: 1rem 0;
+
+        
     }
 }
