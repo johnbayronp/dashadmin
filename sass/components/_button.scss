@@ -1,0 +1,19 @@
+.btn {
+    background: transparent;
+    padding: .6rem 1.8rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 2rem rgba(gray, .1);
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    i {
+        color: $blue;
+        margin-right: .6rem;
+    }
+
+    &--white {
+        background-color: white;
+        color: $purpleLight;
+    }
+}

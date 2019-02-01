@@ -1,0 +1,96 @@
+.wrapper {
+    margin-left: 24rem;
+    padding: 0;
+
+    &__header {
+        padding: 1rem 3rem;
+        width: 100%;
+        text-align: right;      
+
+        .search-area {
+            .searchform {
+                padding-right: 4rem;
+
+                &__btn {
+                    cursor: pointer;
+
+                    i {
+                        font-size: 2rem;
+                        color: gray;
+                    }
+                }
+
+                &__input {
+                    width: 0;
+                    opacity: 0;
+                    padding: 1rem 1.8rem;
+                    margin-right: -1rem;
+                    font-size: 1.4rem;
+                    border-radius: 5rem;
+                    border: none;
+                    transition: all .5s ease;
+                }
+
+                .focus {
+                    outline: 0;
+                    box-shadow: 0 .5rem 1rem rgba(gray, .2);
+                }
+
+                .active {
+                    width: 40rem;
+                    opacity: 1;
+                    margin-right: 2rem;
+                }
+            }
+
+        }
+
+        .search-area, .user-area {
+            display: inline-block;
+            
+            a {
+                vertical-align: top;
+                font-size: 2rem;
+                margin: 0;
+                color: gray;
+            }
+        }
+
+        .notifications {
+            position: relative;
+
+            &--circle {
+                width: .8rem;
+                height: .8rem;
+                background-color: red;
+                border-radius: 50%;
+                position: absolute;
+                top: 1.1rem;
+                left: .9rem;
+            }
+        }
+
+        .notifications, .settings-icon {
+            padding-right: 4rem;
+
+            i {
+                padding-top: 1.4rem;
+            }
+        }
+
+        .user-img {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+            border: .3rem solid white;
+            box-shadow: 0 .4rem 1rem rgba(gray, .2);
+
+            img {
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+}
