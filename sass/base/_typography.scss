@@ -1,3 +1,23 @@
 .heading {
-    
+    display: block;
+    margin-bottom: 4rem;
+
+    i {
+        color: $blue;
+        vertical-align: top;
+        font-size: 1.8rem;
+        padding: 2rem 2rem 0 0;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-family: "Quicksand";
+        font-weight: 400;
+        color: $purpleLight;
+        display: inline-block;
+
+        &--exc {
+            color: gray;
+        }
+    }
 }
