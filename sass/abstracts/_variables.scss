@@ -6,3 +6,9 @@ $gray: #FCFCFF;
 $orangered: #FF442E;
 
 /* Grid System */
+$grid-col: 12;
+$grid-max-width: 120rem;
+$bp-small: "only screen and (min-width: 0px)";
+$bp-medium: "only screen and (min-width: 768px)";
+$bp-large: "only screen and (min-width: 1008px)";
+$bp-xl: "only screen and (min-width: 1300px)";
