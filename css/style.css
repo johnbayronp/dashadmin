@@ -46,7 +46,7 @@ body {
       padding: 0; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #FCFCFF;
   font-weight: 700; }
 
@@ -67,7 +67,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
   display: block;
   margin-bottom: 4rem; }
   .heading i {
-    color: #2D8AD4;
+    color: #3EB3FF;
     vertical-align: top;
     font-size: 1.8rem;
     padding: 2rem 2rem 0 0; }
@@ -89,7 +89,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
   font-size: 1.3rem;
   font-weight: 700; }
   .btn i {
-    color: #2D8AD4;
+    color: #3EB3FF;
     margin-right: .6rem; }
   .btn--white {
     background-color: white;
@@ -98,10 +98,26 @@ input[type="submit"]:focus, input[type="submit"]:active {
 .card {
   background-color: white;
   box-shadow: 0 1rem 2rem rgba(128, 128, 128, 0.1);
-  border-radius: .3rem;
+  border-radius: .5rem;
   margin-top: 2.5rem; }
   .card__content {
     padding: 2rem 2.5rem; }
+  .card__title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #3A305B;
+    line-height: 2.6rem;
+    margin-bottom: 1.4rem; }
+  .card__subtitle {
+    font-size: 1.2rem;
+    color: #3A305B;
+    line-height: 1.5;
+    font-weight: 300; }
+  .card .values {
+    background: -webkit-linear-gradient(#FF442E, #FF0068);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; }
 
 .sidebar {
   max-width: 24rem;
@@ -162,7 +178,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
           border-bottom-left-radius: 5rem;
           padding-right: 0; }
           .sidebar__nav ul li.active a i, .sidebar__nav ul li:hover a i, .sidebar__nav ul li:focus a i {
-            color: #2D8AD4; }
+            color: #3EB3FF; }
 
 .wrapper {
   margin-left: 24rem;

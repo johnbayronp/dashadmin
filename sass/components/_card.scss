@@ -1,10 +1,33 @@
 .card {   
     background-color: white;
     box-shadow: 0 1rem 2rem rgba(gray, .1);
-    border-radius: .3rem;
+    border-radius: .5rem;
     margin-top: 2.5rem;
 
     &__content {
         padding: 2rem 2.5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $purpleLight;
+        line-height: 2.6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+        color: $purpleLight;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+
+    .values {
+        background: -webkit-linear-gradient($orangered, $pinky);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+        
     }
 }
