@@ -5,7 +5,7 @@
     margin-top: 2.5rem;
 
     &__content {
-        padding: 2rem 2.5rem;
+        padding: 2rem 2.5rem 1rem;
     }
 
     &__title {
@@ -17,17 +17,30 @@
     }
 
     &__subtitle {
-        font-size: 1.2rem;
+        font: {
+            size: 1.2rem;
+            weight: 300;
+        }
         color: $purpleLight;
         line-height: 1.5;
-        font-weight: 300;
+    }
+
+    &__data {
+        display: inline-block;
+        margin: {
+            right: 3rem;
+            bottom: 2rem;
+        }
+    }
+
+    .second {
+        color: $graytext !important;
     }
 
     .values {
-        background: -webkit-linear-gradient($orangered, $pinky);
+        background: linear-gradient(to right, $orangered, $pinky);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 3rem;
-        
     }
 }

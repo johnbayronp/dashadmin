@@ -101,7 +101,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
   border-radius: .5rem;
   margin-top: 2.5rem; }
   .card__content {
-    padding: 2rem 2.5rem; }
+    padding: 2rem 2.5rem 1rem; }
   .card__title {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -110,11 +110,17 @@ input[type="submit"]:focus, input[type="submit"]:active {
     margin-bottom: 1.4rem; }
   .card__subtitle {
     font-size: 1.2rem;
+    font-weight: 300;
     color: #3A305B;
-    line-height: 1.5;
-    font-weight: 300; }
+    line-height: 1.5; }
+  .card__data {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-bottom: 2rem; }
+  .card .second {
+    color: #BFBCCB !important; }
   .card .values {
-    background: -webkit-linear-gradient(#FF442E, #FF0068);
+    background: linear-gradient(to right, #FF442E, #FF0068);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem; }
@@ -197,7 +203,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
         cursor: pointer; }
         .wrapper__header .search-area .searchform__btn i {
           font-size: 2rem;
-          color: gray; }
+          color: #BFBCCB; }
       .wrapper__header .search-area .searchform__input {
         width: 0;
         opacity: 0;
