@@ -1,8 +1,8 @@
-.card {
-    @include clearfix;
+.card {   
     background-color: white;
     box-shadow: 0 1rem 2rem rgba(gray, .1);
     border-radius: .3rem;
+    margin-top: 2.5rem;
 
     &__content {
         padding: 2rem 2.5rem;

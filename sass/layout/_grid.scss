@@ -7,20 +7,26 @@
         content: "";
         display: table;
         clear:both;
+        @include clearfix;
     }
 }
 
 [class*='col-'] {
     float: left;
     width: 100%;
-    padding: 1rem;
+    padding-right: 2.5rem;
+    padding-left: -2.5rem;
     min-height: .1rem;
     display: inline-block;
+
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 @media #{$bp-small} {
     .container {
-        width: 95%;
+        width: 100%;
         max-width: $grid-max-width;
     }
 

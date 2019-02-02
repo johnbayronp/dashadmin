@@ -98,11 +98,8 @@ input[type="submit"]:focus, input[type="submit"]:active {
 .card {
   background-color: white;
   box-shadow: 0 1rem 2rem rgba(128, 128, 128, 0.1);
-  border-radius: .3rem; }
-  .card:after {
-    content: "";
-    clear: both;
-    display: table; }
+  border-radius: .3rem;
+  margin-top: 2.5rem; }
   .card__content {
     padding: 2rem 2.5rem; }
 
@@ -169,7 +166,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
 
 .wrapper {
   margin-left: 24rem;
-  padding: 0 4.5rem;
+  padding: 0 3.5rem;
   /* HEADER SECTION */
   /* CONTENT */ }
   .wrapper__header {
@@ -243,17 +240,25 @@ input[type="submit"]:focus, input[type="submit"]:active {
     content: "";
     display: table;
     clear: both; }
+    .container:after:after,
+    .container .row:after:after {
+      content: "";
+      clear: both;
+      display: table; }
 
 [class*='col-'] {
   float: left;
   width: 100%;
-  padding: 1rem;
+  padding-right: 2.5rem;
+  padding-left: -2.5rem;
   min-height: .1rem;
   display: inline-block; }
+  [class*='col-']:last-child {
+    padding-right: 0; }
 
 @media only screen and (min-width: 0px) {
   .container {
-    width: 95%;
+    width: 100%;
     max-width: 120rem; }
   .col-sm-1 {
     width: 8.33333%; }
