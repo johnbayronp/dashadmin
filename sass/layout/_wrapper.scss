@@ -27,7 +27,12 @@
                     opacity: 0;
                     padding: 1rem 1.8rem;
                     margin-right: -1rem;
-                    font-size: 1.4rem;
+                    font: {
+                        family: 'Lato', sans-serif;
+                        size: 1.4rem;
+                        weight: 300;
+                    }
+                    color: $purpleLight;
                     border-radius: 5rem;
                     border: none;
                     transition: all .5s ease;
@@ -99,8 +104,6 @@
 
     /* CONTENT */
     &__content {
-        padding: 1rem 0;
-
-        
+        padding: 1rem 0;        
     }
 }

@@ -4,7 +4,7 @@ var btn = document.querySelector(".searchform__btn");
 var cardWidth = document.querySelector(".card").offsetWidth;
 var chart = document.getElementById("myChart");
 var chart2 = document.getElementById("myChart2");
-
+var body = document.getElementsByTagName("body")[0];
 
 /* Events */
 btn.addEventListener('click', function(e) {
@@ -76,3 +76,11 @@ var firstChart2 = new Chart(chart2d2, {
     data: data,
     options: options
 });
+
+
+/* Scrollbar Plugin */
+/* var bodyps = new PerfectScrollbar(body, {
+    wheelSpeed: 1,
+    swipeEasing: true,
+});
+bodyps.update(); */
