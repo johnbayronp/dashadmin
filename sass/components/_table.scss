@@ -1,0 +1,48 @@
+.table {
+    width: 100%;
+    margin: 0;
+    display: table;
+    font: {
+        size: 1.4rem;
+        weight: 500;
+    }
+    border-collapse: collapse;
+    color: $purpleLight;
+    margin-bottom: 2rem;
+
+    &--border {
+        border-spacing: .1rem;
+        border-color: $purpleLight;
+
+        tr {
+            &:nth-child(even) {
+                background-color: rgba($graytext, .1);
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        td, th {
+            padding: 1.2rem 1rem;
+            text-align: center;
+        }
+    }
+
+    th {
+        background-color: $blue;
+        color: $purpleDark;
+        font-weight: 700;
+        padding: 1.8rem;
+
+        &:first-child {
+            border-top-left-radius: .5rem;
+        }
+
+        &:last-child {
+            border-top-right-radius: .5rem;
+        }
+    }
+
+}

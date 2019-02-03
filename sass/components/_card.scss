@@ -9,11 +9,20 @@
     }
 
     &__title {
+        display: inline-block;
+        text-align: left;
         text-transform: uppercase;
         font-size: 1.4rem;
         color: $purpleLight;
         line-height: 2.6rem;
         margin-bottom: 1.4rem;
+    }
+
+    .link-title {
+        display: inline-block;
+        float: right;
+        color: $blue;
+        font-weight: 700;
     }
 
     &__subtitle {
@@ -42,5 +51,9 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 3rem;
+    }
+
+    .chart-container {
+        height: 10rem !important;
     }
 }

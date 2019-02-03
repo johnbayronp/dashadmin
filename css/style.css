@@ -103,11 +103,18 @@ input[type="submit"]:focus, input[type="submit"]:active {
   .card__content {
     padding: 2rem 2.5rem 1rem; }
   .card__title {
+    display: inline-block;
+    text-align: left;
     text-transform: uppercase;
     font-size: 1.4rem;
     color: #3A305B;
     line-height: 2.6rem;
     margin-bottom: 1.4rem; }
+  .card .link-title {
+    display: inline-block;
+    float: right;
+    color: #3EB3FF;
+    font-weight: 700; }
   .card__subtitle {
     font-size: 1.2rem;
     font-weight: 300;
@@ -124,6 +131,8 @@ input[type="submit"]:focus, input[type="submit"]:active {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem; }
+  .card .chart-container {
+    height: 10rem !important; }
 
 .sidebar {
   max-width: 24rem;
@@ -185,6 +194,35 @@ input[type="submit"]:focus, input[type="submit"]:active {
           padding-right: 0; }
           .sidebar__nav ul li.active a i, .sidebar__nav ul li:hover a i, .sidebar__nav ul li:focus a i {
             color: #3EB3FF; }
+
+.table {
+  width: 100%;
+  margin: 0;
+  display: table;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-collapse: collapse;
+  color: #3A305B;
+  margin-bottom: 2rem; }
+  .table--border {
+    border-spacing: .1rem;
+    border-color: #3A305B; }
+    .table--border tr:nth-child(even) {
+      background-color: rgba(191, 188, 203, 0.1); }
+    .table--border tr:last-child {
+      border-bottom: none; }
+    .table--border td, .table--border th {
+      padding: 1.2rem 1rem;
+      text-align: center; }
+  .table th {
+    background-color: #3EB3FF;
+    color: #312847;
+    font-weight: 700;
+    padding: 1.8rem; }
+    .table th:first-child {
+      border-top-left-radius: .5rem; }
+    .table th:last-child {
+      border-top-right-radius: .5rem; }
 
 .wrapper {
   margin-left: 24rem;
