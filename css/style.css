@@ -613,7 +613,7 @@ input[type="submit"]:focus, input[type="submit"]:active {
         outline: 0;
         box-shadow: 0 0.5rem 1rem rgba(128, 128, 128, 0.2); }
       .wrapper__header .search-area .searchform .active {
-        width: 40rem;
+        width: 80%;
         opacity: 1;
         margin-right: 2rem; }
     .wrapper__header .search-area, .wrapper__header .user-area {
