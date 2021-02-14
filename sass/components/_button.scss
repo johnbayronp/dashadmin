@@ -6,14 +6,39 @@
     margin: 2rem 0;
     font-size: 1.3rem;
     font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    transform: translate(0, 0);
+    transition: all .4s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 2rem rgba(gray, .3);
+        transform: translate(0, -.3rem);
+    }
 
     i {
-        color: $blue;
-        margin-right: .6rem;
+        margin-right: .8rem;
+    }
+
+    &--blue {
+        background-color: $blue;
+        color: white;
+
+        i {
+            color: white;
+        }
     }
 
     &--white {
         background-color: white;
         color: $purpleLight;
+
+        i {
+            color: $blue;
+        }
+    }
+
+    &:focus {
+        outline: none;
     }
 }

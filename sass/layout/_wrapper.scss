@@ -1,6 +1,6 @@
 .wrapper {
     margin-left: 24rem;
-    padding: 0 4.5rem;;
+    padding: 0 3.5rem;
 
     /* HEADER SECTION */
     &__header {
@@ -18,7 +18,7 @@
 
                     i {
                         font-size: 2rem;
-                        color: gray;
+                        color: $graytext;
                     }
                 }
 
@@ -27,7 +27,12 @@
                     opacity: 0;
                     padding: 1rem 1.8rem;
                     margin-right: -1rem;
-                    font-size: 1.4rem;
+                    font: {
+                        family: 'Lato', sans-serif;
+                        size: 1.4rem;
+                        weight: 300;
+                    }
+                    color: $purpleLight;
                     border-radius: 5rem;
                     border: none;
                     transition: all .5s ease;
@@ -39,7 +44,7 @@
                 }
 
                 .active {
-                    width: 40rem;
+                    width: 80%;
                     opacity: 1;
                     margin-right: 2rem;
                 }
@@ -65,7 +70,7 @@
             &--circle {
                 width: .8rem;
                 height: .8rem;
-                background-color: red;
+                background-color: $orangered;
                 border-radius: 50%;
                 position: absolute;
                 top: 1.1rem;
@@ -99,8 +104,6 @@
 
     /* CONTENT */
     &__content {
-        padding: 1rem 0;
-
-        
+        padding: 1rem 0;        
     }
 }

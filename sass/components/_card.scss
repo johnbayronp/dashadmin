@@ -1,0 +1,59 @@
+.card {   
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(gray, .1);
+    border-radius: .5rem;
+    margin-top: 2.5rem;
+
+    &__content {
+        padding: 2rem 2.5rem 1rem;
+    }
+
+    &__title {
+        display: inline-block;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $purpleLight;
+        line-height: 2.6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .link-title {
+        display: inline-block;
+        float: right;
+        color: $blue;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font: {
+            size: 1.2rem;
+            weight: 300;
+        }
+        color: $purpleLight;
+        line-height: 1.5;
+    }
+
+    &__data {
+        display: inline-block;
+        margin: {
+            right: 3rem;
+            bottom: 2rem;
+        }
+    }
+
+    .second {
+        color: $graytext !important;
+    }
+
+    .values {
+        background: linear-gradient(to right, $orangered, $pinky);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+
+    .chart-container {
+        height: 10rem !important;
+    }
+}

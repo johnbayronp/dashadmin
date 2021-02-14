@@ -1,0 +1,96 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    &.top {
+        .tiptext {
+            margin-left: -6rem;
+            bottom: 150%;
+            left: 50%;
+
+            &::after {
+                margin-left: -.5rem;
+                top: 100%;
+                left: 50%;
+                border-color: $purpleDark transparent transparent transparent;
+            }
+        }
+    }
+
+    &.bottom {
+        .tiptext {
+            margin-left: -6rem;
+            top: 150%;
+            left: 50%;
+
+            &::after {
+                margin-left: -.5rem;
+                bottom: 100%;
+                left: 50%;
+                border-color: transparent transparent $purpleDark transparent;
+            }
+        }
+    }
+
+    &.left {
+        .tiptext {
+            top: -.5rem;
+            right: 110%;
+
+            &::after {
+                margin-top: -.5rem;
+                top: 50%;
+                left: 100%;
+                border-color: transparent transparent transparent $purpleDark;
+            }
+        }
+    }
+
+    &.right {
+        .tiptext {
+            top: -.5rem;
+            left: 110%;
+
+            &::after {
+                margin-top: -.5rem;
+                top: 50%;
+                right: 100%;
+                border-color: transparent $purpleDark transparent transparent;
+            }
+        }
+    }
+
+    &:hover {
+        .tiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .tiptext {
+        visibility: hidden;
+        opacity: 0;
+        width: 8rem;
+        background-color: $purpleLight;
+        color: $blue;
+        text-align: center;
+        border-radius: .5rem;
+        padding: .6rem 0;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0 .5rem 1rem rgba($graytext, .2);
+        font: {
+            size: 1.2rem;
+            weight: 300;
+            family: 'Lato', sans-serif;
+        }
+        transition: all .5s ease-out;
+
+        &::after {
+            content: "";
+            position: absolute;
+            border-width: .5rem;
+            border-style: solid;
+        }
+    }
+}

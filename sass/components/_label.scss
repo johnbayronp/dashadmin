@@ -1,0 +1,35 @@
+.label {
+    padding: .4rem 1rem;
+    border-radius: 50rem;
+    background: transparent;
+    font: {
+        family: 'Open Sans', sans-serif;
+        weight: 700;
+    }
+    cursor: pointer;
+
+    &--orangered {
+        color: white;
+        background-color: rgba($orangered, 1);
+    }
+
+    &--blue {
+        color: white;
+        background-color: rgba($blue, 1);
+    }
+
+    &--purple {
+        color: white;
+        background-color: rgba($purpleLight, 1);
+    }
+
+    &--pink {
+        color: white;
+        background-color: rgba($pinky, 1);
+    }
+
+    &--gray {
+        color: white;
+        background-color: rgba($graytext, 1);
+    }
+}

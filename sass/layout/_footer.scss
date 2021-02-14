@@ -1,0 +1,34 @@
+.footer {
+    margin-left: 24rem;
+    padding: 3.5rem 3.5rem 2rem;
+
+    &__copy {
+        color: $purpleLight;
+        text-align: right;
+        font: {
+            size: 1.4rem;
+            family: 'Lato', sans-serif;
+            weight: 300;
+        }
+        
+        a {
+            border-bottom: .1rem dashed rgba($purpleLight, .4);
+            padding-bottom: .2rem;
+            transition: all .4s;
+
+            &:hover {
+                padding-bottom: 0;
+                border-bottom-color: rgba($purpleLight, .6);
+                color: $purpleDark;
+            }
+        }
+
+        i {
+            margin: 0 .6rem;
+        }
+
+        .fa-heart {
+            color: $pinky;
+        }
+    }
+}

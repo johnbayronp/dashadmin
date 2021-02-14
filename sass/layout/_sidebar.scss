@@ -3,11 +3,23 @@
     width: 24rem;
     background-color: $purpleLight;
     margin: 0;
-    position: absolute;
+    position: fixed;
+    left: 0;
     top: 0;
     bottom: 0;
     overflow-y: scroll;
     // padding-left: 2.5rem;
+
+    &__logo {
+        margin: 0 auto;
+        width: 6rem;
+        height: 6rem;
+        padding: 2rem 0;
+
+        &-img {
+            width: 100%;
+        }
+    }
 
     &::-webkit-scrollbar {
         width: .8rem;
@@ -25,8 +37,7 @@
     &__form {
         margin: 0 auto;
         text-align: center;
-        padding-top: 4rem;
-
+        padding-top: 6rem;
     }
 
     &__projects {
@@ -40,7 +51,6 @@
         outline: none;
         font-size: 1.3rem;
         font-weight: 500;
-
     }
 
     &--title-nav {
@@ -89,7 +99,4 @@
             }
         }
     }
-
-
-
 }

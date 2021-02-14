@@ -7,10 +7,16 @@
 @import 'base/utilities';
 
 @import 'components/button';
-@import 'components/sidebar';
-@import 'components/wrapper';
+@import 'components/card';
+@import 'components/form';
+@import 'components/label';
+@import 'components/table';
+@import 'components/tooltip';
 
-// @import 'layout/grid';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/sidebar';
+@import 'layout/wrapper';
 // @import 'layout/navigation';
 
 // @import 'pages/home';
